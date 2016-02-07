@@ -22,7 +22,7 @@ public class Client extends AsyncTask<Void, Void, Void> {
     private ObjectOutputStream outputStream = null;
     private View callingView;
     private boolean isConnected = false;
-    String serverIp = "192.168.100.2";
+    String serverIp = "192.168.56.157";
     private final String fileName = "accelerometer.csv";
 
     public Client(View view) {

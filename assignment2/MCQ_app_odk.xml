@@ -1,0 +1,57 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head><!-- ODK Aggregate upload time: 2016-02-07T16:23:30.228+0000 on https://pcsmaodk-1213.appspot.com -->
+    <h:title>MCQ app odk</h:title>
+    <model>
+      <instance>
+        <data id="build_MCQ-app-odk_1454862146">
+          <meta>
+            <instanceID/>
+          </meta>
+          <MCQ/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/MCQ:label">
+            <value>Select from the given choices</value>
+          </text>
+          <text id="/data/MCQ:option0">
+            <value>A)</value>
+          </text>
+          <text id="/data/MCQ:option1">
+            <value>B)</value>
+          </text>
+          <text id="/data/MCQ:option2">
+            <value>C)</value>
+          </text>
+          <text id="/data/MCQ:option3">
+            <value>D)</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/MCQ" type="select1" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="/data/MCQ">
+      <label ref="jr:itext('/data/MCQ:label')"/>
+      <item>
+        <label ref="jr:itext('/data/MCQ:option0')"/>
+        <value>a</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/MCQ:option1')"/>
+        <value>b</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/MCQ:option2')"/>
+        <value>c</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/MCQ:option3')"/>
+        <value>d</value>
+      </item>
+    </select1>
+  </h:body>
+</h:html>

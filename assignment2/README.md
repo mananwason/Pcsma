@@ -1,0 +1,3 @@
+Task: develop a clicker app (similar to shown on KBC) using ODK (open Data kit). Your app should allow people to press an option (A, B, C or D) and then results can be shown on a Web App. Please use ODK tools to create this app.
+
+I have deployed the web app on [App Engine](http://pcsmaodk-1213.appspot.com/) using ODK aggregate. I have created a form that accepts an option out of a,b,c or d. I have included the xml of the form. This form was made using [ODK builder](http://build.opendatakit.org). This form is loaded on the ODK collect app and then can be filled by selecting an option out of a,b, c or d. 
